@@ -1,0 +1,6 @@
+#!/bin/fish
+
+set ctr $SSDIR/counter
+math (cat $ctr) "+1" > $ctr
+grim -g (slurp) $SSDIR/(cat $ctr)".png"
+cat $SSDIR/(cat $ctr)".png" | wl-copy

@@ -10,6 +10,7 @@
 6. I have a `calc` mode for rofi, which is provided by [rofi-calc](https://github.com/svenstaro/rofi-calc) (and libqalculate).
 7. My login and default shell is `fish`.
 8. The firefox theme I use is [Philadelphia Eagles Green](https://addons.mozilla.org/en-US/firefox/addon/philadelphia-eagles-green/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+9. The fonts used are Fira Mono, Fira Sans, and Font Awesome for icons.
 
 ### Acknowledgements
 
