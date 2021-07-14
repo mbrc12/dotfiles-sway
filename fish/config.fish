@@ -3,8 +3,9 @@ if status is-interactive
 end
 
 if status is-login
-	LIBSEAT_BACKEND=logind dbus-run-session sway
+	exec runsway
 end
 
 set -Ux SWAYSOCK /run/user/(id -u)/sway-ipc.(id -u).(pgrep -x sway).sock
+set -Ux SSDIR $HOME/media/ss
 

@@ -4,3 +4,4 @@ set ctr $SSDIR/counter
 math (cat $ctr) "+1" > $ctr
 grim $SSDIR/(cat $ctr)".png"
 cat $SSDIR/(cat $ctr)".png" | wl-copy
+notify-send "Image saved to"$SSDIR/(cat $ctr)
