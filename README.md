@@ -22,3 +22,4 @@
     ```
 
 2. [Waybar](https://github.com/Alexays/Waybar) is the bar I use. The default config is beautiful enough, I just themed it for my purposes.
+3. [mako](https://github.com/emersion/mako) is my notification daemon. Extremely customizable, and looks great!

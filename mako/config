@@ -1,0 +1,10 @@
+font=Fira Sans 14
+background-color=#E29578
+text-color=#222222FF
+default-timeout=10000
+progress-color=over #FFDDD2FF
+# anchor=bottom-right
+padding=15
+border-radius=5
+border-color=#ffddd2ff
+margin=5

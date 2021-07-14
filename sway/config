@@ -196,6 +196,9 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
+bindsym Print exec grim_full
+bindsym $mod+Print exec grim_region
+
 #
 # Status Bar:
 #
@@ -228,5 +231,6 @@ client.focused $darkgreen $darkgreen $snowwhite
 client.unfocused $black $black $snowwhite
 client.urgent $darkwheat $darkwheat $black
 
+exec mako &
 
 include /etc/sway/config.d/*
