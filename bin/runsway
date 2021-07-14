@@ -1,0 +1,5 @@
+#!/bin/fish
+
+LIBSEAT_BACKEND=logind dbus-run-session sway
+
+
