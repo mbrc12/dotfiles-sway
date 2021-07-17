@@ -168,7 +168,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: @dark;
+    background-color: @deep;
     color: @light;
 }
 
@@ -200,7 +200,7 @@ label:focus {
 }
 
 #tray {
-    background-color: @normal;
+    background-color: @dark;
 }
 
 #idle_inhibitor {
