@@ -128,8 +128,8 @@ static const char *colorname_default[] = {
     "#001418"
 };
 
-// fairyfloss
-static const char *colorname[] = {
+// fairyfloss 
+static const char *colorname_ff[] = {
 	/* 8 normal colors */
 	"#42395d",
 	"#a8757b",
@@ -158,14 +158,44 @@ static const char *colorname[] = {
     "#001418"
 };
 
+// nord
+static const char *colorname[] = {
+	/* 8 normal colors */
+	"#757575",
+	"#825d4d",
+	"#728c62",
+	"#ada16d",
+	"#4d7b82",
+	"#8a7267",
+	"#729494",
+	"#e0e0e0",
+
+	/* 8 bright colors */
+	"#8a8a8a",
+	"#cf937a",
+	"#98d9aa",
+	"#fae79d",
+	"#7ac3cf",
+	"#d6b2a1",
+	"#ade0e0",
+	"#e0e0e0",
+
+	[255] = 0,
+
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#1c3333",
+	"#555555",
+    "#001418"
+};
+
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 257;
+static unsigned int defaultrcs = 258;
 
 /*
  * Default shape of cursor
