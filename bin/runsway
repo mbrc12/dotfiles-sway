@@ -1,5 +1,8 @@
 #!/bin/fish
-
+# pipewire &
+# pipewire-pulse &
+# pipewire-media-session &
+# mako &
 LIBSEAT_BACKEND=logind dbus-run-session sway
 
 

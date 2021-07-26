@@ -5,12 +5,12 @@
 # Read `man 5 sway` for a complete reference.
 
 gaps inner 10
-font Fira Mono 10
-default_border pixel 3
+font Fira Sans 10
+# default_border 
 # hide_edge_borders both 
 
-set $opacity 0.9
-for_window [class="st-256color"] opacity $opacity
+#set $opacity 0.9
+#for_window [class="st-256color"] opacity $opacity
 
 ### Variables
 #
@@ -29,11 +29,11 @@ set $term st -e tmux
 set $menu rofi -show drun
 set $cmd rofi -show run
 set $calc rofi -show calc -modi calc
-set $browse rofi -show file-browser
+set $browse "st -e vifm"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/mbrc/media/wall.png fill
+output * bg /home/mbrc/media/wall-wolf.jpg fill
 #
 # Example configuration:
 #
@@ -232,5 +232,10 @@ client.unfocused $black $black $snowwhite
 client.urgent $darkwheat $darkwheat $black
 
 exec mako &
+exec pipewire &
+exec pipewire-pulse &
+exec pipewire-media-session &
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec xdg-desktop-portal &
 
 include /etc/sway/config.d/*
