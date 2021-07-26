@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Mono:pixelsize=21:antialias=true:autohint=true";
+static char *font = "Fira Mono:pixelsize=23:antialias=true:autohint=true";
 
 static char *font2[] = {
     "Fira Mono:pixelsize=21:antialias=true:autohint=true",
