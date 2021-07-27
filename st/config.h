@@ -128,7 +128,7 @@ static const char *colorname_default[] = {
     "#001418"
 };
 
-// fairyfloss 
+// fairyfloss
 static const char *colorname_ff[] = {
 	/* 8 normal colors */
 	"#42395d",
@@ -158,8 +158,8 @@ static const char *colorname_ff[] = {
     "#001418"
 };
 
-// nord
-static const char *colorname[] = {
+// seaweed pastel
+static const char *colorname_sp[] = {
 	/* 8 normal colors */
 	"#757575",
 	"#825d4d",
@@ -188,6 +188,60 @@ static const char *colorname[] = {
     "#001418"
 };
 
+// gotham
+
+static const char *colorname_gotham[] = {
+    "#0a0f14",
+    "#c33027",
+    "#26a98b",
+    "#edb54b",
+    "#195465",
+    "#4e5165",
+    "#33859d",
+    "#98d1ce",
+    "#10151b",
+    "#d26939",
+    "#081f2d",
+    "#245361",
+    "#093748",
+    "#888ba5",
+    "#599caa",
+    "#d3ebe9",
+
+	[255] = 0,
+
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#0a0f14",
+	"#555555",
+    "#001418"
+};
+
+// spacedust
+static const char *colorname[] = {
+    "#6e5346",
+    "#e35b00",
+    "#5cab96",
+    "#e3cd7b",
+    "#0f548b",
+    "#e35b00",
+    "#06afc7",
+    "#f0f1ce",
+    "#684c31",
+    "#ff8a3a",
+    "#aecab8",
+    "#ffc878",
+    "#67a0ce",
+    "#ff8a3a",
+    "#83a7b4",
+    "#fefff1",
+
+	[255] = 0,
+
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#0a1e24",
+	"#555555",
+    "#001418"
+};
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
