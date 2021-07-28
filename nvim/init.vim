@@ -22,6 +22,8 @@ Plug 'rakr/vim-two-firewatch'
 
 Plug 'junegunn/seoul256.vim'
 
+Plug 'whatyouhide/vim-gotham'
+
 Plug 'tssm/fairyfloss.vim'
 
 Plug 'adelarsq/vim-grimmjow'
@@ -44,7 +46,7 @@ Plug 'mbbill/undotree'
 
 " Plug 'tpope/vim-surround'
 
-Plug 'gauteh/vim-evince-synctex' 
+Plug 'gauteh/vim-evince-synctex'
 
 Plug 'lervag/vimtex'
 
@@ -95,9 +97,9 @@ Plug 'plasticboy/vim-markdown'
 
 " Plug 'habamax/vim-asciidoctor'
 
-Plug 'psliwka/vim-smoothie'
+" Plug 'psliwka/vim-smoothie'
 
-Plug 'keith/swift.vim'
+" Plug 'keith/swift.vim'
 
 Plug 'mhartington/oceanic-next'
 
@@ -109,12 +111,16 @@ Plug 'habamax/vim-godot'
 
 Plug 'tbastos/vim-lua'
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 
-
+Plug 'ntpeters/vim-better-whitespace'
 " Plug 'OmniSharp/omnisharp-vim'
 
 " Plug 'mbrc12/vim-autoswap'
+
+
 
 call plug#end()
 
@@ -140,7 +146,7 @@ call plug#end()
 
 
 function! ToggleCul()
-    set cul! 
+    set cul!
     redraw
 endfunction
 
@@ -199,7 +205,7 @@ autocmd CompleteDone * pclose
 " colorscheme seoul256
 
 " set background=light
-" colorscheme 
+" colorscheme
 
 " colorscheme flattened_dark
 
@@ -221,7 +227,7 @@ colorscheme ayu
 
 set noerrorbells
 
-" " colorscheme gotham256
+colorscheme gotham256
 " colorscheme xcode
 
 " colorscheme fairyfloss
@@ -230,7 +236,7 @@ nmap <silent> -w :w<CR>
 
 " Commenting using vim-commentary
 nmap <silent> ; gccj
-vmap <silent> ; gc 
+vmap <silent> ; gc
 
 nmap <silent> -n :noh<CR>
 
@@ -257,7 +263,7 @@ function! TexMode()
     " inoremap <Up> <C-o>gk
     inoremap <Home> <C-o>g<Home>
     inoremap <End>  <C-o>g<End>
-    
+
     nnoremap j gj
     nnoremap k gk
     vnoremap j gj
@@ -289,7 +295,7 @@ nnoremap -tt :VimtexCompile<CR>
 nnoremap -tv :VimtexView<CR>
 
 let g:tex_flavor = "latex"
-let g:Tex_IgnoredWarnings = 
+let g:Tex_IgnoredWarnings =
     \'Underfull'."\n".
     \'Overfull'."\n".
     \'specifier changed to'."\n".
@@ -351,17 +357,17 @@ nmap -ee :Eval<CR>
 " nnoremap "+p :let @"=substitute(system("wl-paste --no-newline"), '<C-v><C-m>', '', 'g')<cr>p
 " nnoremap "*p :let @"=substitute(system("wl-paste --no-newline --primary"), '<C-v><C-m>', '', 'g')<cr>p
 
-function! NewFile() 
+function! NewFile()
     call inputsave()
     let l:fn = input("Tab file [<CR> to cancel] ? ", "", "file")
     call inputrestore()
     if l:fn == ""
         echo "Cancelled"
-    else 
+    else
         let l:cmd = "tabnew ".l:fn
         call execute(l:cmd)
-    endif 
-endfunction 
+    endif
+endfunction
 
 nmap <silent> `TT :call NewFile()<CR>
 
@@ -371,7 +377,7 @@ map <Leader> <Plug>(easymotion-prefix)
 augroup MatlabFix
     autocmd!
     autocmd BufNewFile,BufRead *.m setlocal commentstring=%\ %s
-augroup END 
+augroup END
 
 " set runtimepath+=/home/mbrc/dev/supersede
 
