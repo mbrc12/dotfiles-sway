@@ -111,8 +111,8 @@ Plug 'habamax/vim-godot'
 
 Plug 'tbastos/vim-lua'
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 
 Plug 'ntpeters/vim-better-whitespace'
@@ -220,7 +220,7 @@ autocmd CompleteDone * pclose
 
 " colorscheme gruvbox8_hard
 
-colorscheme ayu
+" colorscheme ayu
 
 " let g:monotone_color = [314, 20, 90]
 " colorscheme monotone

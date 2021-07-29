@@ -8,7 +8,7 @@ gaps inner 10
 font Fira Sans 10
 # default_border 
 # hide_edge_borders both 
-set $my_cursor Layan
+set $my_cursor Layan_white
 set $my_cursor_size 30
 
 seat seat0 xcursor_theme $my_cursor $my_cursor_size
@@ -36,11 +36,11 @@ set $term st -e tmux
 set $menu rofi -show drun
 set $cmd rofi -show run
 set $calc rofi -show calc -modi calc
-set $browse "st -e vifm"
+set $browse "nautilus"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg /home/mbrc/media/wall-wolf.jpg fill
+output * bg /home/mbrc/media/wp-girl.jpg fill
 #
 # Example configuration:
 #
@@ -243,7 +243,7 @@ exec pipewire &
 exec pipewire-pulse &
 exec pipewire-media-session &
 exec brightnessctl -q set 50%
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 #exec xdg-desktop-portal &
 
 include /etc/sway/config.d/*
