@@ -8,7 +8,14 @@ gaps inner 10
 font Fira Sans 10
 # default_border 
 # hide_edge_borders both 
+set $my_cursor Layan
+set $my_cursor_size 30
 
+seat seat0 xcursor_theme $my_cursor $my_cursor_size
+exec_always {
+    gsettings set org.gnome.desktop.interface cursor-theme $my_cursor
+    gsettings set org.gnome.desktop.interface cursor-size $my_cursor_size
+}
 #set $opacity 0.9
 #for_window [class="st-256color"] opacity $opacity
 
@@ -33,7 +40,7 @@ set $browse "st -e vifm"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/mbrc/media/wall-wolf.jpg fill
+#output * bg /home/mbrc/media/wall-wolf.jpg fill
 #
 # Example configuration:
 #
@@ -235,7 +242,8 @@ exec mako &
 exec pipewire &
 exec pipewire-pulse &
 exec pipewire-media-session &
+exec brightnessctl -q set 50%
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec xdg-desktop-portal &
+#exec xdg-desktop-portal &
 
 include /etc/sway/config.d/*
