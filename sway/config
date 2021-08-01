@@ -6,8 +6,8 @@
 
 gaps inner 10
 font Fira Sans 10
-# default_border 
-# hide_edge_borders both 
+# default_border
+# hide_edge_borders both
 set $my_cursor Layan_white
 set $my_cursor_size 30
 
@@ -40,7 +40,7 @@ set $browse "nautilus"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/mbrc/media/wp-girl.jpg fill
+output * bg /home/mbrc/media/wp-flower.jpg fill
 #
 # Example configuration:
 #
@@ -81,9 +81,11 @@ output * bg /home/mbrc/media/wp-girl.jpg fill
 #
     # Start a terminal
     bindsym $mod+t exec $term
+    bindsym Alt+Shift+t exec $term
 
     # Kill focused window
     bindsym $mod+q kill
+    bindsym Alt+Shift+q kill
 
     # Start your launcher
     bindsym $mod+p exec $menu
